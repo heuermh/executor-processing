@@ -3,7 +3,7 @@
 mkdir executor
 mkdir executor/library
 cp COPYING executor
-cp README.md executor
+cp README executor
 cp library.properties executor
 cp lib/guava.COPYING executor/guava.COPYING
 cp lib/guava-13.0.1.jar executor/library
