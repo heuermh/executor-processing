@@ -37,10 +37,10 @@ void setup()
   noStroke();
   executor = new Executor(this, 4);
 
-  // nested call, call green 4 seconds after red
+  // nested call, call green() method 4 seconds after red, default time unit is milliseconds
   executor.after(executor.later("red"), "green", 4000);
 
-  // or save reference to future, call yellow 4 seconds after that completes
+  // or save reference to future, call yellow() method 4 seconds after that completes
   ScheduledFuture<?> future = executor.later("blue", 8000);
   executor.after(future, "yellow", 4, TimeUnit.SECONDS);
 }

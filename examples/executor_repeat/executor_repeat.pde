@@ -34,8 +34,13 @@ void setup()
 {
   executor = new Executor(this, 4);
 
+  // call red() method later
   executor.later("red");
+
+  // call green() method in 4 seconds and repeat every 4 seconds after that
   executor.repeat("green", 4, 4, TimeUnit.SECONDS);
+
+  // call blue() method in 6 seconds and repeat every 4 seconds after that
   executor.repeat("blue", 6, 4, TimeUnit.SECONDS);
 }
 

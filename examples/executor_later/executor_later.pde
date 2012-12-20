@@ -33,8 +33,14 @@ Executor executor;
 void setup()
 {
   executor = new Executor(this, 4);
+
+  // call red() method later
   executor.later("red");
+
+  // call green() method after 4 seconds, default time unit is milliseconds
   executor.later("green", 4000);
+
+  // call blue() method after 8 seconds
   executor.later("blue", 8, TimeUnit.SECONDS);
 }
 
