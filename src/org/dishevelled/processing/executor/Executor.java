@@ -20,7 +20,7 @@
     <http://www.gnu.org/licenses/>.
 
 */
-package executor;
+package org.dishevelled.processing.executor;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

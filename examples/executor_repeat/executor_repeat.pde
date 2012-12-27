@@ -20,7 +20,7 @@
     <http://www.gnu.org/licenses/>.
 
 */
-import executor.Executor;
+import org.dishevelled.processing.executor.Executor;
 import java.util.concurrent.TimeUnit;
 
 color c = color(20);
