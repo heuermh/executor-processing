@@ -51,7 +51,8 @@ public final class Executor
     private final LoadingCache<String, Runnable> calls;
     private final ScheduledExecutorService scheduledExecutorService;
 
-    public Executor(final PApplet applet, final int threadPoolSize) {
+    public Executor(final PApplet applet, final int threadPoolSize)
+    {
         checkNotNull(applet, "applet must not be null");
         this.applet = applet;
         calls = CacheBuilder.newBuilder().build(new ReflectiveMethodCall());
