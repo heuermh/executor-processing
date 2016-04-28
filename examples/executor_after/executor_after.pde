@@ -1,7 +1,7 @@
 /*
 
     Executor library for Processing.
-    Copyright (c) 2012-2013 held jointly by the individual authors.
+    Copyright (c) 2012-2016 held jointly by the individual authors.
 
     This file is part of Executor library for Processing.
 
@@ -20,9 +20,10 @@
     <http://www.gnu.org/licenses/>.
 
 */
-import org.dishevelled.processing.executor.Executor;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
+
+import org.dishevelled.processing.executor.Executor;
 
 color c = color(20);
 final color r = color(80, 0, 0);
