@@ -5,6 +5,8 @@ mkdir executor/library
 cp COPYING executor
 cp README executor
 cp library.properties executor
+cp lib/failureaccess.COPYING executor/failureaccess.COPYING
+cp lib/failureaccess-1.0.1.jar executor/library
 cp lib/guava.COPYING executor/guava.COPYING
 cp lib/guava-28.1-jre.jar executor/library
 cp -R src executor
